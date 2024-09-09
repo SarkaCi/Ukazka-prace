@@ -1,0 +1,53 @@
+openapi: 3.0.0
+info:
+  title: Hello World API
+  version: 1.0.1
+servers:
+  - url: http://localhost:8080
+paths:
+  /hello:
+    get:
+      summary: Returns a simple hello message
+      responses:
+        '200':
+          description: A simple hello message
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  cokoliv:
+                    type: string
+                  angel:
+                    type: object
+                    properties:
+                      white:
+                        type: string
+                      pink:
+                        type: string
+                      violet:
+                        type: string
+                  devil:
+                    type: object
+                    properties:
+                      black:
+                        type: string
+                      blue:
+                        type: string
+                      green:
+                        type: string
+                  cars:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        brand:
+                          type: string
+                        model:
+                          type: string
+                        year:
+                          type: integer
+                example:
+                  cokoliv: Do prcic, ono to asi funguje!
+
+

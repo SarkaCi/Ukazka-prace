@@ -1,0 +1,22 @@
+openapi: 3.0.0
+info:
+  title: Hello World API
+  version: 1.0.0
+servers:
+- url: http://localhost:8080
+paths:
+  /hello:
+    get:
+      responses:
+        "200":
+          content:
+            text/plain:
+              schema:
+                example: "Hello, world!"
+                type: string
+          description: A simple hello message
+      summary: Returns a simple hello message
+      x-accepts: text/plain
+components:
+  schemas: {}
+
